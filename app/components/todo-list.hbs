@@ -1,0 +1,11 @@
+<section class="main">
+    <input id="mark-all-completed"
+    class="toggle-all" 
+    type="checkbox">
+    <label for="mark-all-completed">Mark all completed</label>
+    <ul class="todo-list">
+        {{#each this.todos.all as |todo| }}
+        <Todo @todo={{todo}}></Todo>
+        {{/each}}
+    </ul>
+</section>
